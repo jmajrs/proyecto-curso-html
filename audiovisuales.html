@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiovisuales</title>
+    <link rel="icon" href="assets/img/ico.jpg" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        video {
+            width: 100%;
+        }
+        
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 75%;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Lasec Technology Systems</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tecnologias.html">Tecnologías</a></li>
+                <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <div class="centrado">
+        <video src="assets/video/video.mp4" autoplay muted></video>
+    </div>
+
+    <section class="centrado">
+        <div class="gallery">
+            <a href="assets/img/ST4RT-THE-CHANGE-INFOGRAFIA-01.png" target="_blank"><img src="assets/img/ST4RT-THE-CHANGE-INFOGRAFIA-01.png" alt="Lasec image 1"></a>
+            <div class="desc">START THE CHANGE</div>
+        </div>
+        <div class="gallery">
+            <a href="assets/img/start_0000_Capa-3.jpg" target="_blank"><img src="assets/img/start_0000_Capa-3.jpg" alt="Lasec image 2"></a>
+            <div class="desc">TECHNOLOGY SYSTEMS</div>
+        </div>
+        <div class="gallery">
+            <a href="assets/img/banner-nosotro-02-02.jpg" target="_blank"><img src="assets/img/banner-nosotro-02-02.jpg" alt="Lasec image 3"></a>
+            <div class="desc">EL PODER DE LA CREATIVIDAD</div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+</html>
